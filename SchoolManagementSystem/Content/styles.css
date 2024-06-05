@@ -13,7 +13,7 @@
 }
 
 * {
-    margin: 0;
+    margin: 0 0 0 0px;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
@@ -70,7 +70,7 @@ body {
     width: calc(100% - var(--sidebar-width));
     transition: var(--transition);
     padding: 20px;
-    overflow: hidden; /* Prevents unnecessary scrollbars */
+    overflow: hidden;
 }
 
 .sidebar_inner .profile_info {
