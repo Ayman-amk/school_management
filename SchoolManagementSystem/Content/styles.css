@@ -1,19 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
 
-:root {
-    --sidebar-width: 250px;
-    --sidebar-bg: #4561F5;
-    --sidebar-text: #c4dcff;
-    --sidebar-active-bg: #3d3d79;
-    --navbar-bg: #ffffff;
-    --main-bg: #e7f1ff;
-    --text-color: #fff;
-    --border-radius: 10px;
-    --transition: all 0.3s ease;
-}
-
 * {
-    margin: 0 0 0 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
@@ -22,17 +10,14 @@
 }
 
 body {
-    background: var(--main-bg);
+    background: #e7f1ff;
     font-size: 14px;
     letter-spacing: 1px;
-    overflow: hidden;
 }
 
 .wrapper {
     display: flex;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .sidebar {
@@ -45,32 +30,28 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: #000;
         z-index: 998;
         opacity: 0;
         visibility: hidden;
-        transition: var(--transition);
+        transition: all 0.3s ease;
     }
 
 .sidebar_inner {
-    width: var(--sidebar-width);
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    background: var(--sidebar-bg);
+    background: #5558c9;
     z-index: 999;
-    transition: var(--transition);
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    overflow-y: auto;
+    transition: all 0.3s ease;
 }
 
 .main_container {
-    margin-left: var(--sidebar-width);
-    width: calc(100% - var(--sidebar-width));
-    transition: var(--transition);
-    padding: 20px;
-    overflow: hidden;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.3s ease;
 }
 
 .sidebar_inner .profile_info {
@@ -78,33 +59,30 @@ body {
     text-align: center;
 }
 
-    .sidebar_inner .profile_info .profile_img {
-        width: 100px;
-        margin: 0 auto 5px;
-        border-radius: 50%;
-        overflow: hidden;
+.sidebar_inner .profile_img {
+    width: 100px;
+    margin: 0 auto 5px;
+}
+
+    .sidebar_inner .profile_img img {
+        width: 100%;
+        display: block;
     }
 
-        .sidebar_inner .profile_info .profile_img img {
-            width: 100%;
-            display: block;
-        }
+.sidebar_inner .profile_data .name {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: 'Trade Winds', cursive;
+}
 
-    .sidebar_inner .profile_info .profile_data .name {
-        font-size: 18px;
-        color: var(--text-color);
-        margin-bottom: 5px;
-        font-family: 'Trade Winds', cursive;
-    }
-
-    .sidebar_inner .profile_info .profile_data span {
-        color: var(--sidebar-text);
-    }
+.sidebar_inner .profile_data span {
+    color: #c4dcff;
+}
 
 .sidebar_inner .siderbar_menu {
-    max-height: calc(100vh - 200px);
-    overflow-y: auto;
-    padding: 0 10px;
+    height: 500px;
+    overflow: auto;
 }
 
     .sidebar_inner .siderbar_menu > li > a {
@@ -113,9 +91,7 @@ body {
         align-items: center;
         position: relative;
         margin-bottom: 1px;
-        color: var(--sidebar-text);
-        border-radius: var(--border-radius);
-        transition: var(--transition);
+        color: #c4dcff;
     }
 
         .sidebar_inner .siderbar_menu > li > a .icon {
@@ -125,44 +101,42 @@ body {
 
         .sidebar_inner .siderbar_menu > li.active > a,
         .sidebar_inner .siderbar_menu > li > a:hover {
-            background: var(--sidebar-active-bg);
-            color: var(--text-color);
-            text-decoration: none !important;
+            background: #3d3d79;
+            color: #fff;
         }
 
         .sidebar_inner .siderbar_menu > li > a .arrow {
             position: absolute;
             top: 20px;
             right: 20px;
-            transition: var(--transition);
+            transition: all 0.3s ease;
         }
 
 .sidebar .logout_btn a {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: calc(var(--sidebar-width) - 40px);
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    border-radius: var(--border-radius);
+    width: 210px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
     font-weight: 600;
     padding: 10px;
     text-align: center;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
     .sidebar .logout_btn a:hover {
-        background: var(--text-color);
-        color: var(--sidebar-active-bg);
-        text-decoration: none;
+        background: #fff;
+        color: #3d3d79;
     }
 
 .sidebar_inner .close {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 5px;
+    right: 15px;
     font-size: 25px;
-    color: var(--text-color);
+    color: #fff;
     cursor: pointer;
     display: none;
 }
@@ -173,10 +147,10 @@ body {
     }
 
 .navbar {
-    background: var(--navbar-bg);
+    background: #fff;
     height: 50px;
     width: 100%;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.125);
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -186,61 +160,55 @@ body {
         font-size: 25px;
         cursor: pointer;
         margin-right: 20px;
-        color: var(--text-color);
+        color: #5558c9;
         display: none;
     }
 
     .navbar .logo a {
         font-family: 'Trade Winds', cursive;
-        color: var(--text-color);
+        color: #5558c9;
         font-size: 20px;
     }
 
 .content {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    overflow: hidden; /* Prevents unnecessary scrollbars */
 }
 
     .content .item {
-        background: var(--text-color);
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125), -2px -2px 4px rgba(0, 0, 0, 0.125);
+        background: #fff;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.125), -2px -2px 4px rgba(0,0,0,0.125);
+        margin: 10px 5px;
+        width: 31.8%;
         padding: 20px;
-        border-radius: var(--border-radius);
-        flex: 1 1 calc(32% - 20px);
-        margin-bottom: 20px;
     }
 
 .accordion {
-    background: var(--sidebar-active-bg);
+    background: #6f6fc7;
     padding-left: 20px;
-    height: 0px;
-    transition: var(--transition);
+    height: 0;
+    transition: all 0.3s ease;
     overflow: hidden;
-    border-radius: var(--border-radius);
 }
 
     .accordion li a {
         display: block;
-        color: var(--sidebar-text);
-        padding: 12px 0;
-        padding-left: 10px;
-        transition: var(--transition);
+        color: #c4dcff;
+        padding: 12px 0 12px 10px;
     }
 
     .accordion li:last-child a {
-        border-bottom: 0px;
+        border-bottom: 0;
     }
 
     .accordion li a.active {
-        color: var(--text-color);
-        text-decoration: none;
+        color: #fff;
     }
 
     .accordion li a:hover {
-        background: var(--sidebar-active-bg);
-        color: var(--text-color);
+        background: #3d3d79;
+        color: #fff;
     }
 
 .siderbar_menu > li.active .accordion {
@@ -254,7 +222,6 @@ body {
 @media (max-width: 1024px) {
     .sidebar_inner {
         left: -115%;
-        transition: var(--transition);
     }
 
     .main_container {
@@ -268,7 +235,7 @@ body {
     }
 
     .content .item {
-        flex: 1 1 calc(47% - 20px);
+        width: 47%;
     }
 
     .wrapper.active .sidebar_inner {
@@ -283,6 +250,6 @@ body {
 
 @media (max-width: 528px) {
     .content .item {
-        flex: 1 1 100%;
+        width: 100%;
     }
 }
