@@ -50,7 +50,7 @@ The School Management System is a comprehensive application designed to streamli
 
 - **Backend**: ASP.NET (C#)
 - **Database**: SQL Server
-- **Frontend**: HTML, CSS, JavaScript (if applicable)
+- **Frontend**: HTML, CSS, JavaScript, Jquery
 
 ## Getting Started
 
