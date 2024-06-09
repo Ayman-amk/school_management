@@ -65,11 +65,11 @@
                             </a>
                             <ul class="accordion">
                                 <li><a href="../Admin/AddClass.aspx" class="active"><i class="fas fa-user-plus pr-1"></i>Add Class</a></li>
-                                <li><a href="../Admin/ClassFees.aspx" class="active"><i class="fas fa-money-bill-alt pr-1"></i>Class Fees</a></li>
+                                <li><a href="../Admin/AddFees.aspx" class="active"><i class="fas fa-money-bill-alt pr-1"></i>Class Fees</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="../Admin/Subject.aspx">
+                            <a href="../Admin/AddSubject.aspx">
                                 <div class="icon"><i class="fas fa-book"></i></div>
                                 <div class="title">Subjects</div>
                             </a>
@@ -94,7 +94,7 @@
                                 <div class="arrow"><i class="fas fa-chevron-down"></i></div>
                             </a>
                             <ul class="accordion">
-                                <li><a href="../Admin/Student.aspx" class="active"><i class="fas fa-users pr-1"></i>Add Students</a></li>
+                                <li><a href="../Admin/AddStudent.aspx" class="active"><i class="fas fa-users pr-1"></i>Add Students</a></li>
                                 <li><a href="../Admin/StudAttendanceDetails.aspx" class="active"><i class="far fa-list-alt pr-1"></i>Attendance Details</a></li>
                             </ul>
                         </li>

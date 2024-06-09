@@ -11,7 +11,7 @@ namespace SchoolManagementSystem.Admin
 {
 
 
-    public partial class ClassFees
+    public partial class AddSubject
     {
 
         /// <summary>
@@ -33,22 +33,13 @@ namespace SchoolManagementSystem.Admin
         protected global::System.Web.UI.WebControls.DropDownList ddlClass;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// txtSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-
-        /// <summary>
-        /// txtFeesAmounts control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFeesAmounts;
+        protected global::System.Web.UI.WebControls.TextBox txtSubject;
 
         /// <summary>
         /// btnAdd control.
