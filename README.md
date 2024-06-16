@@ -29,21 +29,13 @@ The School Management System is a comprehensive application designed to streamli
    Add, Update, View, and Delete Students.
    Add, Update, View, and Delete Students' Marks.
    
-7. **Attendance Management** \
-   Take Teachers' Attendance and View it.
-   View Students' Attendance taken by Teachers.
-   
 8. **Dashboard** \
    View counts of Students, Teachers, Classes, and Subjects.
 
 ### Teacher Module
 
-#### Features
-1. **Attendance Management** \
-   Take Students' Attendance.
-   View Students' Attendance.
-   
-2. **Marks Management** \
+#### Features   
+1. **Marks Management** \
    View Students' Marks added by Admin.
 
 ## Technologies Used
